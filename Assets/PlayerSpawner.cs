@@ -44,11 +44,11 @@ public class PlayerSpawner : NetworkBehaviour
         }
         if (IsClient)
         {
-            RequestPlayerObjectSpawnRpc();
+            RequestPlayerObjectSpawnServerRpc();
         }
     }
-    [Rpc(SendTo.Server)]
-    private void RequestPlayerObjectSpawnRpc(RpcParams rpcParams = default)
+    [ServerRpc(RequireOwnership = false)]
+    private void RequestPlayerObjectSpawnServerRpc(ServerRpcParams rpcParams = default)
     {
         NetworkObject playerObject = Instantiate(_playerPrefab);
         playerObject.SpawnAsPlayerObject(rpcParams.Receive.SenderClientId);
