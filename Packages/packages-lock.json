@@ -1,14 +1,5 @@
 {
   "dependencies": {
-    "com.kevcas.clones-syncer": {
-      "version": "https://github.com/kevincastejon/com.kevcas.clones-syncer.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.settings-manager": "2.0.1"
-      },
-      "hash": "52b5c4f4518944e7f613425ab4490a274360215f"
-    },
     "com.unity.burst": {
       "version": "1.8.11",
       "depth": 2,
@@ -141,7 +132,7 @@
     },
     "com.unity.settings-manager": {
       "version": "2.0.1",
-      "depth": 1,
+      "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
